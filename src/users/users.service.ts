@@ -43,4 +43,7 @@ export class UsersService {
       })
       .exec();
   }
+  removeAll() {
+    return this.userModel.deleteMany();
+  }
 }
